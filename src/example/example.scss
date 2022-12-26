@@ -1,0 +1,12 @@
+.example-wrapper{
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top:100px;
+  width: 400px;
+  height: 400px;
+  background: lightblue;
+}

@@ -1,0 +1,50 @@
+.scrollbar-wrapper{
+  position: relative;
+  overflow: hidden;
+  .scrollbar-track{
+    right: 2px;
+    top: 2px;
+    background: transparent;
+    z-index: 100;
+    @media only screen and (max-width: 599px){
+      width: 5px;
+    }
+    @media only screen and (min-width: 600px){
+      width: 7px;
+    }
+    height: calc(100% - 4px);
+    position: absolute;
+    .scrollbar-thumb {
+      @media only screen and (max-width: 599px){
+        width: 5px;
+        border-radius: 10px;
+      }
+      @media only screen and (min-width: 600px){
+        width: 7px;
+        border-radius: 8px;
+      }
+      transition: opacity 0.3s ease-out;
+      z-index: 100;
+      position: absolute;
+      content: '';
+      background: black;
+      opacity: 0;
+      &.thumb-show {
+        opacity: 0.4;
+      }
+    }
+  }
+  .scrollbar-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    overflow: auto;
+    .scrollbar-children{
+      z-index: 2;
+      overflow: hidden;
+    }
+  }
+}
