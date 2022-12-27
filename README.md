@@ -24,7 +24,7 @@ npm i react-concise-scrollbar
 import {ConciseScrollBar} from "react-concise-scrollbar";
 ```
 ### Usage
-**react-concise-scrollbar** is used based on the default scroll area.
+**react-concise-scrollbar** is used based on the default scroll area.  
 ***Developers should make a default scroll area first and then insert the component between the wrapper and the content.***
 
 js part
@@ -72,10 +72,10 @@ css part (***set a scroll area***)
 }
 ```
 ## API
+| Property | Type | Default | Description |
+| :--- | :--- | :--- | :--- |
+| scrollY  | boolean | true | If you set scrollY to false, react-concise-scrollbar will not be available. |
+| behavior | 'auto' or 'smooth' | 'auto' | Change scroll-behavior in react-concise-scrollbar. |
+| ref      | object | - | Send React ref as ref props to the component, you can use customized methods to scroll the window. |
+| key      | string | - | Each components' unique key. |
 
-| Property | Type | Default | Description |  
-| :-- | :-- | :-- |  
-| scrollY | boolean | true | If you set scrollY to false, react-concise-scrollbar will not be available. |  
-| behavior | auto|smooth | auto | Change scroll-behavior in react-concise-scrollbar. |  
-| ref | object | - | Send React ref as ref props to the component, you can use customized methods to scroll the window. |  
-| key | string | - | Each components' unique key. | 
