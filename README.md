@@ -3,7 +3,9 @@
 > a React concise scrollbar component with macOS style
 ## Advantages
 - Concise and simple style (hidden when not in use)  
+  ![demo](./demo1.gif)
 - Automatically adapt to the resize of wrapper and content area
+  ![demo](./demo2.gif)
 - Based on traditional design strategy  
     The usage of **react-concise-scrollbar** fits well with developers' original development pattern.  
     When we need a scroll area, we should first creat a wrapper with exact height and set overflow:scroll or auto.
@@ -42,10 +44,38 @@ css part (***set a scroll area***)
 .example-wrapper{
   padding: 10px;
   overflow-y: scroll;
-  overflow-x: hidden;   //set scroll attribute of the scroll area
+  overflow-x: hidden;   
   width: 400px;
-  height: 400px;        //set height of the scroll area
+  height: 400px;       
   background: lightblue;
 }
 ```
+### Use ref to control the scroll position
+```jsx
+    import {useRef} from "react";
+    function Example(){
+    const scrollRef = useRef();
+    return(
+        <div>
+            <button className="scroll-button" onClick={() => {scrollRef.current.scrollTo(0,0)}}>
+                Scroll to Top
+            </button>
+            <div className="example-wrapper">
+                <ConciseScrollBar ref={scrollRef} behavior="smooth">
+                    <div className="example-content">
+                       your conetnt
+                    </div>
+                </ConciseScrollBar>
+            </div>
+        </div>
+    )
+}
+```
 ## API
+
+| Property | Type | Default | Description |  
+| :-- | :-- | :-- |  
+| scrollY | boolean | true | If you set scrollY to false, react-concise-scrollbar will not be available. |  
+| behavior | auto|smooth | auto | Change scroll-behavior in react-concise-scrollbar. |  
+| ref | object | - | Send React ref as ref props to the component, you can use customized methods to scroll the window. |  
+| key | string | - | Each components' unique key. | 

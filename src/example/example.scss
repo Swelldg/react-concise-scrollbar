@@ -1,3 +1,13 @@
+.scroll-button{
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+  border: none;
+  background: lightblue;
+}
 .example-wrapper{
   padding: 10px;
   overflow-y: scroll;

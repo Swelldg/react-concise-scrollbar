@@ -1,10 +1,15 @@
-import React from "react";
+import React, {useRef} from "react";
 import ConciseScrollBar from "../ConciseScrollbar/ConciseScrollbar";
 import './example.scss';
 function Example(){
+    const scrollRef = useRef();
     return(
+        <div>
+            <button className="scroll-button" onClick={() => {scrollRef.current.scrollTo(0,0)}}>
+                Scroll to Top
+            </button>
         <div className="example-wrapper">
-            <ConciseScrollBar>
+            <ConciseScrollBar ref={scrollRef} behavior="smooth">
             <div className="example-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum ex quis nibh cursus, eu
                 sodales erat fringilla. Aenean a ultricies urna. In hac habitasse platea dictumst. Aliquam ullamcorper
@@ -29,6 +34,7 @@ function Example(){
                 platea dictumst.
             </div>
             </ConciseScrollBar>
+        </div>
         </div>
     )
 }
