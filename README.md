@@ -1,6 +1,8 @@
 # react-concise-scrollbar
+[![npm](https://img.shields.io/badge/npm-v0.1.0-orange)](https://www.npmjs.com/package/react-concise-scrollbar)
+[![license](https://img.shields.io/badge/license-MIT-blue)]()
+> a React concise scrollbar component with macOS style  
 
-> a React concise scrollbar component with macOS style
 ## Advantages
 - Concise and simple style (hidden when not in use)  
   ![demo](./demo1.gif)
@@ -78,4 +80,5 @@ function Example(){
 | behavior | 'auto' or 'smooth' | 'auto' | Change scroll-behavior in react-concise-scrollbar. |
 | ref      | object | - | Send React ref as ref props to the component, you can use customized methods to scroll the window. |
 | key      | string | - | Each components' unique key. |
+
 
