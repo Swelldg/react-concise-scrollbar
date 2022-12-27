@@ -1,6 +1,7 @@
 {
   "name": "react-concise-scrollbar",
-  "version": "0.1.0",
+  "version": "0.1.2",
+  "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
