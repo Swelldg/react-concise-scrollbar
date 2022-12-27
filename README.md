@@ -1,13 +1,11 @@
 # react-concise-scrollbar
-[![npm](https://img.shields.io/badge/npm-v0.1.0-orange)](https://www.npmjs.com/package/react-concise-scrollbar)
+[![npm](https://img.shields.io/badge/npm-v0.1.2-orange)](https://www.npmjs.com/package/react-concise-scrollbar)
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Swelldg/react-concise-scrollbar/blob/master/license)
 > a React concise scrollbar component with macOS style  
 
 ## Advantages
-- Concise and simple style (hidden when not in use)  
-  ![demo](./demo1.gif)
+- Concise and simple style (hidden when not in use)
 - Automatically adapt to the resize of wrapper and content area
-  ![demo](./demo2.gif)
 - Based on traditional design strategy  
     The usage of **react-concise-scrollbar** fits well with developers' original development pattern.  
     When we need a scroll area, we should first creat a wrapper with exact height and set overflow:scroll or auto.
