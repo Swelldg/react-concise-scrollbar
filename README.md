@@ -52,8 +52,8 @@ css part (***set a scroll area***)
 ```
 ### Use ref to control the scroll position
 ```jsx
-    import {useRef} from "react";
-    function Example(){
+import {useRef} from "react";
+function Example(){
     const scrollRef = useRef();
     return(
         <div>
