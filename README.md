@@ -1,6 +1,6 @@
 # react-concise-scrollbar
 [![npm](https://img.shields.io/badge/npm-v0.1.0-orange)](https://www.npmjs.com/package/react-concise-scrollbar)
-[![license](https://img.shields.io/badge/license-MIT-blue)]()
+[![license](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Swelldg/react-concise-scrollbar/blob/master/license)
 > a React concise scrollbar component with macOS style  
 
 ## Advantages
