@@ -16,7 +16,7 @@
     **react-concise-scrollbar** can automatically get these size and render correctly.
 ## Example
 ![demo1](/demo1.gif)
-![demo2](/demo1.gif)
+![demo2](/demo2.gif)
 ## Basic Usage
 ### Installation
 ```
