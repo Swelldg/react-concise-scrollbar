@@ -14,6 +14,9 @@
 - No need to send height or width to component as props  
     Since **react-concise-scrollbar** is used based on original design pattern, all you need to do is setting the correct height and width of the wrapper area in original mode.
     **react-concise-scrollbar** can automatically get these size and render correctly.
+## Example
+![demo1](/demo1.gif)
+![demo2](/demo1.gif)
 ## Basic Usage
 ### Installation
 ```
