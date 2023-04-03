@@ -1,5 +1,5 @@
 # react-concise-scrollbar
-[![npm](https://img.shields.io/badge/npm-v1.0.1-orange)](https://www.npmjs.com/package/react-concise-scrollbar)
+[![npm](https://img.shields.io/badge/npm-v1.0.3-orange)](https://www.npmjs.com/package/react-concise-scrollbar)
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Swelldg/react-concise-scrollbar/blob/master/license)
 > a React concise scrollbar component with macOS style  
 
@@ -24,7 +24,7 @@ npm i react-concise-scrollbar
 ```
 ### Import
 ```jsx
-import {ConciseScrollBar} from "react-concise-scrollbar";
+import ConciseScrollBar from "react-concise-scrollbar";
 ```
 ### Usage
 **react-concise-scrollbar** is used based on the default scroll area.  
